@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { AutoComplete } from 'primereact/autocomplete';
-import 'primeflex/primeflex.css';
 
 function IAutoComplete() {
     let [selectedLocation, setLocation] = useState()
@@ -28,13 +27,13 @@ function IAutoComplete() {
     }
 
     return (
-        <div>
+        <>
             {console.log(selectedLocation)}
             <div className="card">
-                <h5>Location</h5>
+                {/* <h5>Location</h5> */}
                 <AutoComplete value={selectedLocation} suggestions={filteredLocations} completeMethod={searchLocation} onChange={(e) => setLocation(e.value)} />
             </div>
-        </div>
+        </>
     );
 }
 

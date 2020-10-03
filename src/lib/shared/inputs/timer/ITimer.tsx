@@ -1,21 +1,17 @@
 import React, { useState } from 'react';
 import { Calendar } from 'primereact/calendar';
 
-function ICalender() {
-    let [date, setDate] = useState<Date | Date[] | undefined>()
-
-    const minDate = new Date();
-    let maxDate = new Date();
-    maxDate.setDate(maxDate.getDate() + 15);
+function ITimer() {
+    let [time, setTime] = useState<Date | Date[] | undefined>()
 
     return (
         <>
-            {console.log(date)}
+            {console.log(time)}
             <div className="card">
                 <div className="p-fluid p-grid p-formgrid">
                     <div className="p-field p-col-12 p-md-4">
                         {/* <label htmlFor="minmax">Select Date</label> */}
-                        <Calendar value={date} onChange={(e) => setDate(e.value)} minDate={minDate} maxDate={maxDate} />
+                        <Calendar value={time} onChange={(e) => setTime(e.value)} timeOnly hourFormat="12" />
                     </div>
                 </div>
             </div>
@@ -23,4 +19,4 @@ function ICalender() {
     );
 }
 
-export default ICalender;
+export default ITimer;
