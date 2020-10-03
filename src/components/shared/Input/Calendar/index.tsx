@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Calendar } from 'primereact/calendar';
+import { Calendar as PRCalendar } from 'primereact/calendar';
 
 function ICalender() {
     let [date, setDate] = useState<Date | Date[] | undefined>()
@@ -15,7 +15,7 @@ function ICalender() {
                 <div className="p-fluid p-grid p-formgrid">
                     <div className="p-field p-col-12 p-md-4">
                         {/* <label htmlFor="minmax">Select Date</label> */}
-                        <Calendar value={date} onChange={(e) => setDate(e.value)} minDate={minDate} maxDate={maxDate} />
+                        <PRCalendar value={date} onChange={(e) => setDate(e.value)} minDate={minDate} maxDate={maxDate} />
                     </div>
                 </div>
             </div>

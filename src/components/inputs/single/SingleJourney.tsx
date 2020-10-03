@@ -1,7 +1,7 @@
 import React from 'react';
-import ICalender from '../../..//lib/shared/inputs/calender/ICalender';
-import IAutoComplete from '../../../lib/shared/inputs/autocomplete/IAutoComplete';
-import ITimer from '../../../lib/shared/inputs/timer/ITimer';
+import ICalender from '../../shared/Input/Calendar';
+import IAutoComplete from '../../shared/Input/AutoComplete';
+import ITimer from '../../shared/Input/Timer';
 
 function SingleJourney() {
     return (

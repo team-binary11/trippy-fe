@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { AutoComplete } from 'primereact/autocomplete';
+import { AutoComplete as PRAutoComplete  } from 'primereact/autocomplete';
 
 function IAutoComplete() {
     let [selectedLocation, setLocation] = useState()
@@ -31,7 +31,7 @@ function IAutoComplete() {
             {console.log(selectedLocation)}
             <div className="card">
                 {/* <h5>Location</h5> */}
-                <AutoComplete value={selectedLocation} suggestions={filteredLocations} completeMethod={searchLocation} onChange={(e) => setLocation(e.value)} />
+                <PRAutoComplete value={selectedLocation} suggestions={filteredLocations} completeMethod={searchLocation} onChange={(e) => setLocation(e.value)} />
             </div>
         </>
     );

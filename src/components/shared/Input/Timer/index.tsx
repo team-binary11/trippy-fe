@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Calendar } from 'primereact/calendar';
+import { Calendar as PRCalendar } from 'primereact/calendar';
 
 function ITimer() {
     let [time, setTime] = useState<Date | Date[] | undefined>()
@@ -11,7 +11,7 @@ function ITimer() {
                 <div className="p-fluid p-grid p-formgrid">
                     <div className="p-field p-col-12 p-md-4">
                         {/* <label htmlFor="minmax">Select Date</label> */}
-                        <Calendar value={time} onChange={(e) => setTime(e.value)} timeOnly hourFormat="12" />
+                        <PRCalendar value={time} onChange={(e) => setTime(e.value)} timeOnly hourFormat="12" />
                     </div>
                 </div>
             </div>
