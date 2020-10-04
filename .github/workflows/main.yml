@@ -38,3 +38,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Deploy
         run: npm run deploy
+        env:
+          EMAIL: team.binary10@gmail.com
+          GH_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BUILD_DIR: _site
