@@ -2,8 +2,8 @@ import { Moment } from 'moment';
 
 
 export interface IInputs {
-  departureTime: Moment,
-  departureDate: Moment
+  departureTime: Date | Date[],//Moment,
+  departureDate: Date | Date[],//Moment
 
   source: ILocation;
   destination: ILocation;
@@ -16,8 +16,8 @@ export interface IInputs {
 
 export interface ILocation {
   text: string;
-  lat: number;
-  long: number;
+  lat?: number;
+  long?: number;
 }
 
 

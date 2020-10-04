@@ -3,8 +3,8 @@ import moment from 'moment';
 import { IInputs } from './../../lib/models/inputs';
 import { InputActions, InputActionTypes} from '../actions';
 const initial_state: IInputs = {
-  departureTime: moment(),
-  departureDate : moment(),
+  departureTime: new Date(),//moment(),
+  departureDate : new Date(),
   source: {
     text: "",
     lat: 0,
