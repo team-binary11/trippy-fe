@@ -1,32 +1,40 @@
 import React from 'react';
-import ICalender from '../../shared/Input/Calendar';
-import IAutoComplete from '../../shared/Input/AutoComplete';
-import ITimer from '../../shared/Input/Timer';
+import Calender from '../../shared/Input/Calendar';
+import AutoComplete from '../../shared/Input/AutoComplete';
+import Timer from '../../shared/Input/Timer';
+import { useDispatch } from 'react-redux';
+import { InputActionTypes } from '../../../redux/actions';
 
 function SingleJourney() {
+    const dispatch = useDispatch();
+
     return (
         <>
             <h5>Single Journey Details</h5>
             <div className="p-fluid p-formgrid p-grid">
                 <div className="p-field p-col">
                     <label htmlFor="sourceLocation">From</label>
-                    <IAutoComplete />
+                    <AutoComplete />
                 </div>
                 <div className="p-field p-col">
                     <label htmlFor="destinationLocation">To</label>
-                    <IAutoComplete />
+                    <AutoComplete />
                 </div>
                 </div>
                 <div className="p-fluid p-formgrid p-grid">
                 <div className="p-field p-col">
                     <label htmlFor="sourceLocation">Pick A Date</label>
-                    <ICalender />
+                    <Calender />
                 </div>
                 <div className="p-field p-col">
                     <label htmlFor="destinationLocation">Choose Time</label>
-                    <ITimer />
+                    <Timer />
                 </div>
             </div>
+            <button onClick={() => {
+                dispatch({type: InputActionTypes.SetInputs, payload: {}})
+            }}>Submit</button>
+
         </>
     );
 }
