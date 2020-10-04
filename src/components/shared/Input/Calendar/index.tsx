@@ -10,10 +10,9 @@ function ICalender() {
 
     return (
         <>
-            {console.log(date)}
             <div className="card">
                 <div className="p-fluid p-grid p-formgrid">
-                    <div className="p-field p-col-12 p-md-4">
+                    <div className="p-field p-col-12">
                         {/* <label htmlFor="minmax">Select Date</label> */}
                         <PRCalendar value={date} onChange={(e) => setDate(e.value)} minDate={minDate} maxDate={maxDate} />
                     </div>
