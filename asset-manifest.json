@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/trippy-fe/static/css/main.d9e4c816.chunk.css",
+    "main.js": "/trippy-fe/static/js/main.501f1fca.chunk.js",
+    "main.js.map": "/trippy-fe/static/js/main.501f1fca.chunk.js.map",
+    "runtime-main.js": "/trippy-fe/static/js/runtime-main.8f384830.js",
+    "runtime-main.js.map": "/trippy-fe/static/js/runtime-main.8f384830.js.map",
+    "static/css/2.27b0fa54.chunk.css": "/trippy-fe/static/css/2.27b0fa54.chunk.css",
+    "static/js/2.d8d643fa.chunk.js": "/trippy-fe/static/js/2.d8d643fa.chunk.js",
+    "static/js/2.d8d643fa.chunk.js.map": "/trippy-fe/static/js/2.d8d643fa.chunk.js.map",
+    "index.html": "/trippy-fe/index.html",
+    "precache-manifest.7d1497d76987cfaa0e43cbbaa94e5001.js": "/trippy-fe/precache-manifest.7d1497d76987cfaa0e43cbbaa94e5001.js",
+    "service-worker.js": "/trippy-fe/service-worker.js",
+    "static/css/2.27b0fa54.chunk.css.map": "/trippy-fe/static/css/2.27b0fa54.chunk.css.map",
+    "static/css/main.d9e4c816.chunk.css.map": "/trippy-fe/static/css/main.d9e4c816.chunk.css.map",
+    "static/js/2.d8d643fa.chunk.js.LICENSE.txt": "/trippy-fe/static/js/2.d8d643fa.chunk.js.LICENSE.txt",
+    "static/media/primereact.min.css": "/trippy-fe/static/media/color.c7a33805.png",
+    "static/media/primeicons.css": "/trippy-fe/static/media/primeicons.79432094.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8f384830.js",
+    "static/css/2.27b0fa54.chunk.css",
+    "static/js/2.d8d643fa.chunk.js",
+    "static/css/main.d9e4c816.chunk.css",
+    "static/js/main.501f1fca.chunk.js"
+  ]
+}
