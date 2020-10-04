@@ -4,15 +4,15 @@ import 'primereact/resources/primereact.min.css';
 import 'primeicons/primeicons.css';
 import 'primeflex/primeflex.css';
 
-import Calender from './components/shared/Input/Calendar';
-import AutoComplete from './components/shared/Input/AutoComplete';
+import SingleJourney from './components/inputs/single/SingleJourney';
 
 const Layout = () => (
-  <h1>
-    Hi world
-    <Calender />
-    <AutoComplete />
-  </h1>
+  <div className='p-pl-2 p-pr-2'>
+    <h1 className='p-shadow-3 p-text-center'>
+      Hi Tripster
+    </h1>
+    <SingleJourney />
+  </div>
 )
 
 export default Layout;

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { AutoComplete as PRAutoComplete  } from 'primereact/autocomplete';
 
-function AutoComplete() {
+function IAutoComplete() {
     let [selectedLocation, setLocation] = useState()
     let [filteredLocations, setFilteredLocations] = useState<string[] | undefined>()
     const allLocations: string[] = ["Sirsa", "Delhi", "Patiala", "Gurgaon", "Shimla"];
@@ -27,14 +27,14 @@ function AutoComplete() {
     }
 
     return (
-        <div>
+        <>
             {console.log(selectedLocation)}
             <div className="card">
-                <h5>Location</h5>
+                {/* <h5>Location</h5> */}
                 <PRAutoComplete value={selectedLocation} suggestions={filteredLocations} completeMethod={searchLocation} onChange={(e) => setLocation(e.value)} />
             </div>
-        </div>
+        </>
     );
 }
 
-export default AutoComplete;
+export default IAutoComplete;
