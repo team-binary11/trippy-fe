@@ -28,7 +28,6 @@ function IAutoComplete() {
 
     return (
         <>
-            {console.log(selectedLocation)}
             <div className="card">
                 {/* <h5>Location</h5> */}
                 <PRAutoComplete value={selectedLocation} suggestions={filteredLocations} completeMethod={searchLocation} onChange={(e) => setLocation(e.value)} />
